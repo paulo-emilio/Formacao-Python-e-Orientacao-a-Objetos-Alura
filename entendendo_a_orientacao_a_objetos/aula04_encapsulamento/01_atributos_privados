@@ -1,0 +1,13 @@
+Na classe Conta foram alterados os nomes dos atributos colocando 2 underlines
+antes de cada palavra (ex: self.__saldo = saldo)
+Dessa forma o Python 'conta' ao dev que esse atributo não deve ser utilizado/alterado fora do método
+ao digitar "conta1." os atributos aparecem assim: _Conta__saldo indicando que é privado (Encapsulado)
+
+class Conta:
+
+    def __init__(self, numero, titular, saldo, limite):
+        print(f'Contruindo Objeto ... {self}')
+        self.__numero = numero
+        self.__titular = titular
+        self.__saldo = saldo
+        self.__limite = limite

@@ -1,0 +1,5 @@
+conta = Conta(123, "Nico", 55.5, 1000.0)
+# criando uma referencia para conta
+outraRef = conta -> (isso faz com q duas referencias apontem para o mesmo lugar
+# tirando o referenciamento de 'outraRef'
+outraRef = None -> (passa a não referenciar mais)
