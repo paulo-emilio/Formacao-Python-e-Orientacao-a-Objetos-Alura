@@ -1,0 +1,33 @@
+idades= [39,30,27,18]
+for c in idades:
+    print(c)
+print(len(idades))
+print(idades[0])
+idades.append(15)  #obs: append só recebe 1 argumento
+idades.append(15)
+idades.remove(15) # remove só 1
+idades.remove(30)
+idades.clear() # remove tds elementos
+
+03 - Mais Operações em listas e list comprehension
+
+# verificar se está lá
+print(28 in idades)
+if 15 in idades:
+    idades.remove(15)
+
+# adicionar elementos na posição desejada
+idades.insert(1,20)  # vai adicionar o número 20 na posição 1
+
+# adicionar mais de um elemento
+idades.extend([27,19])  # esse método extende a lista, adicionando mais esses 2 elementos
+
+# mudando os valores para outra array
+idades_no_ano_que_vem = []
+for idade in idades:
+    idades_no_ano_que_vem.append(idade+1)
+# melhor forma:
+idades_no_ano_que_vem = [(idade+1) for idade in idades]
+
+# Filtragem
+print([(idade) for idade in idades if idade > 21])    #obs: '()' em 'idade' é opcional
