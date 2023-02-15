@@ -1,0 +1,6 @@
+colocando o super().__init__() na classes Filme e Serie
+isso faz com que o inicializador da classe mãe sejam passados para elas.
+
+E passando os parametros que serao passados de Filme e Serie para a
+classe mãe Programa:
+super().__init__(nome, ano)

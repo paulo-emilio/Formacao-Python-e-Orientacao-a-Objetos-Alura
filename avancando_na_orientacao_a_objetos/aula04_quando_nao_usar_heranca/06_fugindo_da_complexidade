@@ -1,0 +1,18 @@
+retirei a classe mãe 'list' da minha classe Playlist
+e criei novos propertys para fazer o que eu estava usando de list
+
+
+class Playlist:
+    def __init__(self, nome, programas):
+        self.nome = nome
+        print(f'\nPLAYLIST: {self.nome}')
+        print('=-' * 40)
+        self._programas = programas
+
+    @property
+    def listagem(self):
+        return self._programas
+
+    @property
+    def tamanho(self):
+        return len(self._programas)
